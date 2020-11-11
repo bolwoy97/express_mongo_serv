@@ -30,7 +30,7 @@ app.use(require('./controllers'));
 
 const PORT = process.env.PORT || 3000
 
-async function start() {  //test
+async function start() { 
   try {
     await dbinit.connect()
     app.listen(PORT, () => {
